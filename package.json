@@ -1,0 +1,17 @@
+{
+  "name": "create-fivem-resource",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "inquirer": "^10.1.2",
+    "simple-git": "^3.25.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
