@@ -2,8 +2,12 @@
   "name": "create-fivem-resource",
   "version": "1.0.0",
   "license": "MIT",
+  "bin": {
+    "create-fivem-resource": "./dist/src/index.js"
+  },
   "scripts": {
-    "start": "ts-node src/index.ts"
+    "start": "ts-node src/index.ts",
+    "build": "tsc --project tsconfig.json"
   },
   "dependencies": {
     "commander": "^12.1.0",
