@@ -1,13 +1,5 @@
 import { join } from "path";
-import {
-  existsSync,
-  readFileSync,
-  writeFileSync,
-  mkdirSync,
-  cpSync,
-  rmSync,
-  renameSync,
-} from "fs";
+import { existsSync, mkdirSync, cpSync, rmSync, renameSync } from "fs";
 import simpleGit from "simple-git";
 import { promptForm } from "./form";
 import { getInternalTemplatePath } from "./template";
@@ -23,7 +15,7 @@ export const createFivemResource = async (
   _2: any,
   { args }: { args: string[] }
 ) => {
-  const resourceName = args[1];
+  const resourceName = args[0];
   const projectPath = join(process.cwd(), resourceName);
 
   if (existsSync(projectPath)) {
