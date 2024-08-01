@@ -1,6 +1,6 @@
 {
   "name": "create-fivem-resource",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "license": "MIT",
   "bin": {
     "create-fivem-resource": "./dist/src/index.js"
@@ -10,6 +10,7 @@
     "build": "tsc --project tsconfig.json"
   },
   "dependencies": {
+    "chalk": "^4",
     "commander": "^12.1.0",
     "inquirer": "^10.1.2",
     "simple-git": "^3.25.0"

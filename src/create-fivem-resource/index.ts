@@ -9,6 +9,8 @@ import {
   updatePackageJson,
   updateReadme,
 } from "./update";
+import { hasPackageJson, installDependencies } from "./install";
+import chalk from "chalk";
 
 export const createFivemResource = async (
   _1: any,
@@ -30,6 +32,12 @@ export const createFivemResource = async (
   const git = simpleGit();
 
   try {
+    console.log(
+      "Creating a new fivem resource in",
+      chalk.greenBright(resourceName),
+      "\n"
+    );
+
     mkdirSync(projectPath);
 
     ///// FETCH TEMPLATE /////
@@ -46,6 +54,8 @@ export const createFivemResource = async (
 
     const templatePath = getInternalTemplatePath(config);
     cpSync(join(tmpPath, templatePath), projectPath, { recursive: true });
+
+    console.log("Template files copied!");
 
     ///// UPDATE /////
     console.log("Update package.json...");
@@ -67,9 +77,15 @@ export const createFivemResource = async (
 
     console.log("Remove unnecessary files...");
     removeUnecessaryFiles(projectPath, config);
-    console.log("Unnecessary files removed!");
-
     rmSync(tmpPath, { recursive: true });
+    console.log("Unnecessary files removed!\n");
+
+    if (hasPackageJson(projectPath)) {
+      console.log(
+        "Installing packages. This might take a couple of minutes.\n"
+      );
+      installDependencies(projectPath);
+    }
   } catch (error) {
     console.error("An error occurred while fetching the template", error);
     process.exit(1);
