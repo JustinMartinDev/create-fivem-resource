@@ -25,5 +25,5 @@ _([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7
 Then follow instruction of README.md in your resource
 
 <p align='center'>
-<img src='./demo-cli-1.0.3.gif' width='600' alt='create-fivem-resource' />
+<img src='https://github.com/JustinMartinDev/create-fivem-resource/blob/main/demo-cli-1.0.7.gif' width='600' alt='create-fivem-resource' />
 </p>
