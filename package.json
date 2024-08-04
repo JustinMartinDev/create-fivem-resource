@@ -1,6 +1,6 @@
 {
   "name": "create-fivem-resource",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "license": "MIT",
   "bin": {
     "create-fivem-resource": "./dist/src/index.js"

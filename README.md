@@ -27,3 +27,21 @@ Then follow instruction of README.md in your resource
 <p align='center'>
 <img src='https://github.com/JustinMartinDev/create-fivem-resource/blob/main/demo-cli-1.0.7.gif' width='600' alt='create-fivem-resource' />
 </p>
+
+## Roadmap
+
+🕑: to do
+🚧: wip
+✅: finished
+
+| Template                 | Status | Link                                                                                               |
+| ------------------------ | ------ | -------------------------------------------------------------------------------------------------- |
+| Typescript - Nui - React | 🚧     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/typescript/nui/react) |
+| Typescript - Nui - Vue   | 🕑     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/typescript/nui/vue)   |
+| Typescript - Vanilla     | 🕑     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/typescript/vanilla)   |
+| Javascript - Nui - React | 🕑     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/javascript/nui/react) |
+| Javascript - Nui - Vue   | 🕑     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/javascript/nui/vue)   |
+| Javascript - Vanilla     | 🕑     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/javascript/vanilla)   |
+| Lua - Nui - React        | 🕑     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/lua/nui/react)        |
+| Lua - Nui - Vue          | 🕑     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/lua/nui/vue)          |
+| Lua - Vanilla            | 🕑     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/lua/vanilla)          |
