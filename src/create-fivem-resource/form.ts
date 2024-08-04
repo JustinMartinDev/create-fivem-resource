@@ -47,7 +47,7 @@ export const promptForm = async () => {
     const nuiConfigAnswer = await inquirer.prompt([
       {
         type: "list",
-        name: "nuiFramewok",
+        name: "nuiFramework",
         message: "Nui framework :",
         choices: ["Vue", "React"],
       },

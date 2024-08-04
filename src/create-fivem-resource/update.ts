@@ -1,6 +1,22 @@
 import { join } from "path";
 import { readFileSync, writeFileSync, rmSync } from "fs";
 
+const removeScripts = (scripts: Record<string, string>, workspace: string) => {
+  // Create a copy of the scripts object to avoid mutating the original
+  const updatedScripts = { ...scripts };
+
+  // Iterate over the keys of the object
+  for (const key in updatedScripts) {
+    // Check if the key contains ":web"
+    if (key.includes(`:${workspace}`)) {
+      // Delete the key from the updatedScripts object
+      delete updatedScripts[key];
+    }
+  }
+
+  return updatedScripts;
+};
+
 export const updatePackageJson = (
   projectPath: string,
   resourceName: string,
@@ -23,6 +39,23 @@ export const updatePackageJson = (
   } else {
     packageJson.author = config.author;
   }
+
+  let scripts = packageJson.scripts;
+
+  // Remove scripts if not needed
+  if (!config.type.includes("server")) {
+    scripts = removeScripts(scripts, "server");
+  }
+
+  if (!config.type.includes("client")) {
+    scripts = removeScripts(scripts, "client");
+  }
+
+  if (!config.nuiFramework) {
+    scripts = removeScripts(scripts, "web");
+  }
+
+  packageJson.scripts = scripts;
 
   writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
 };

@@ -45,7 +45,7 @@ export const createFivemResource = async (
 
     const tmpPath = join(projectPath, "tmp");
     mkdirSync(tmpPath);
-    await git.clone(repoUrl, tmpPath);
+    await git.clone(repoUrl, tmpPath, { "--depth": 1 });
 
     console.log("Template fetched successfully!");
 
