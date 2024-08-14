@@ -1,14 +1,8 @@
 ---
-id: available-scripts
+id: ts-js-available-scripts
 title: Available Scripts
 sidebar_label: Available Scripts
 ---
-
-:::warning
-
-This section is only for **`Javascript`** and **`Typescript`** templates, and if you use **`Nui`** integration
-
-:::
 
 ### `pnpm watch`
 

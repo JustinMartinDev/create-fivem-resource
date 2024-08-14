@@ -21,7 +21,22 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "Getting Started",
-      items: ["getting-started", "folder-structure", "available-scripts"],
+      items: [
+        "getting-started",
+        "folder-structure",
+        "available-scripts",
+        "supported-features",
+      ],
+    },
+    {
+      type: "category",
+      label: "Typescript / Javascript",
+      items: ["rollupjs", "ts-js-available-scripts", "typings"],
+    },
+    {
+      type: "category",
+      label: "Nui",
+      items: ["nui-client"],
     },
   ],
 

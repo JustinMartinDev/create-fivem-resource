@@ -9,7 +9,7 @@ const config: Config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://create-fivem-resource.dev",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -47,6 +47,7 @@ const config: Config = {
   ],
 
   themeConfig: {
+    defaultMode: "dark",
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
@@ -76,18 +77,14 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "Welcome",
-              to: "/docs/documentation-intro",
+              label: "Getting Started",
+              to: "/docs/getting-started",
             },
           ],
         },
         {
           title: "More",
           items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
             {
               label: "GitHub",
               href: "https://github.com/JustinMartinDev/create-fivem-resource",
@@ -99,7 +96,7 @@ const config: Config = {
     },
     prism: {
       theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      darkTheme: prismThemes.vsDark,
     },
   } satisfies Preset.ThemeConfig,
 };
