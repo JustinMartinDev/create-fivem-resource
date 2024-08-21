@@ -13,7 +13,7 @@ This is a multiple boilerplate for getting started with TypeScript/Javascript/Lu
 ## Quick Start
 
 ```sh
-npx create-fivem-resource my-resource
+npx create-fivem-resource
 ```
 
 This command will install and execute `create-fivem-resource`, an unofficial FiveM project scaffolding tool. You will be presented with prompts for several optional features such as TypeScript and Nui support :
@@ -25,23 +25,21 @@ _([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7
 Then follow instruction of README.md in your resource
 
 <p align='center'>
-<img src='https://github.com/JustinMartinDev/create-fivem-resource/blob/main/demo-cli-1.0.7.gif' width='600' alt='create-fivem-resource' />
+<img src='https://github.com/JustinMartinDev/create-fivem-resource/blob/main/demo-cli-2.0.2.gif' width='600' alt='create-fivem-resource' />
 </p>
 
 ## Roadmap
 
-🕑: to do
-🚧: wip
-✅: finished
+🕑: to do 🚧: wip ✅: finished
 
 | Template                 | Status | Link                                                                                               |
 | ------------------------ | ------ | -------------------------------------------------------------------------------------------------- |
-| Typescript - Nui - React | 🚧     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/typescript/nui/react) |
-| Typescript - Nui - Vue   | 🕑     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/typescript/nui/vue)   |
-| Typescript - Vanilla     | 🕑     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/typescript/vanilla)   |
-| Javascript - Nui - React | 🕑     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/javascript/nui/react) |
-| Javascript - Nui - Vue   | 🕑     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/javascript/nui/vue)   |
-| Javascript - Vanilla     | 🕑     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/javascript/vanilla)   |
-| Lua - Nui - React        | 🕑     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/lua/nui/react)        |
-| Lua - Nui - Vue          | 🕑     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/lua/nui/vue)          |
-| Lua - Vanilla            | 🕑     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/lua/vanilla)          |
+| Typescript - Nui - React | ✅     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/typescript-nui-react) |
+| Typescript - Nui - Vue   | ✅     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/typescript-nui-vue)   |
+| Typescript - Vanilla     | ✅     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/typescript-vanilla)   |
+| Javascript - Nui - React | ✅     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/javascript-nui-react) |
+| Javascript - Nui - Vue   | ✅     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/javascript-nui-vue)   |
+| Javascript - Vanilla     | ✅     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/javascript-vanilla)   |
+| Lua - Nui - React        | ✅     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/lua-nui-react)        |
+| Lua - Nui - Vue          | ✅     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/lua-nui-vue)          |
+| Lua - Vanilla            | ✅     | [link](https://github.com/JustinMartinDev/fivem-resource-templates/tree/main/lua-vanilla)          |

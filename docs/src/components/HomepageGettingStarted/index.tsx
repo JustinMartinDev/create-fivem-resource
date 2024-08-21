@@ -8,11 +8,9 @@ export default function HomepageGettingStarted(): JSX.Element {
         <div className="row">
           <div className="col col--4 col--offset-1">
             <h2>Get started in seconds</h2>
-            <p>
-              To create a resource called <i>my-res</i>, run this command:
-            </p>
+            <p>To create a resource, run this command:</p>
             <CodeBlock className="language-sh">
-              npx create-fivem-resource my-res
+              npx create-fivem-resource
             </CodeBlock>
             <br />
           </div>
@@ -20,7 +18,7 @@ export default function HomepageGettingStarted(): JSX.Element {
             <img
               className={styles.featureImage}
               alt="Easy to get started in seconds"
-              src="img/demo-cli-1.0.7.gif"
+              src="img/demo-cli-2.0.2.gif"
             />
           </div>
         </div>
