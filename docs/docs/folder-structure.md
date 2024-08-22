@@ -28,19 +28,19 @@ After creation, your Javascript/Typescript resource should look like this:
 
 ```
 my-res/
-  README.md
+  README_res.md
   client/
     src/
-      client.entry.ts
+      index.ts
     package.json
-    rollup.config.js
+    rollup.config.mjs
   server/
     src/
-      server.entry.ts
+      index.ts
     package.json
-    rollup.config.js
+    rollup.config.mjs
   types/
-    index.d.ts
+    exports.d.ts
     package.json
   web/
     package.json
@@ -50,4 +50,4 @@ my-res/
 
 The `web` sub-folder exist only if you choose the Nui option.
 
-For the resource building we use [Rollup](https://rollupjs.org/) to create bundle of `.entry.(ts|js)` files, **these bundles will be stored in `dist` folder and loaded by FiveM using `fxmanifest.lua`**:
+For the resource building we use [Rollup](https://rollupjs.org/) to create bundle of `index.(ts|js)` files, **these bundle will be stored in `dist` folder and loaded by FiveM using `fxmanifest.lua`**:

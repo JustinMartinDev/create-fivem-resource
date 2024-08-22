@@ -9,8 +9,6 @@ Create FiveM Resource is an unofficially supported way to create resource. It of
 
 ```sh
 npx create-fivem-resource
-cd my-res
-pnpm watch
 ```
 
 > If you've previously installed `create-fivem-resource` globally via `npm install -g create-fivem-resource`, we recommend you uninstall the package using `npm uninstall -g create-fivem-resource` or `yarn global remove create-fivem-resource` to ensure that `npx` always uses the latest version.
@@ -26,7 +24,7 @@ ensure my-res
 Then start your FXServer, and connect to it using FiveM client
 
 <p align='center'>
-<img src='https://cdn.jsdelivr.net/gh/facebook/create-react-app@27b42ac7efa018f2541153ab30d63180f5fa39e0/screencast.svg' width='600' alt='npm start' />
+<img src='/img/demo-cli-2.0.2.gif' width='600' alt='npm start' />
 </p>
 
 ### Get Started Immediately
@@ -78,11 +76,11 @@ Exemples of options :
 
 ## Output
 
-Running any of these commands will create a directory called `my-res` inside the current folder. Inside that directory, it will generate the initial resource structure:
+Running any of these commands will create a folder with the name of your resource. Inside that folder, it will generate the initial resource structure:
 
 ```
 my-res
-├── README.md
+├── README_res.md
 ├── fxmanifest.lua
 ├── client
 │   ├── ....

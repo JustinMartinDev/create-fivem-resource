@@ -36,7 +36,7 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "Nui",
-      items: ["nui-client"],
+      items: ["nui-utils"],
     },
   ],
 
